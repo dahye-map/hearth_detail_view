@@ -38,9 +38,10 @@
 .section04-1 .tit { color:#bc8265; padding-bottom:60px; }
 .section04-1 .point-list-wrap { display:-webkit-flex; display:flex; }
 .section04-1 .point-list { width:33.3333%; padding:0 8px; }
-.section04-1 .point-list .box { background:#f2f2f2; padding:50px 46px 65px; border-bottom-left-radius:40px; border-bottom-right-radius:40px; }
+.section04-1 .point-list .box { background:#f2f2f2; padding:50px 46px 65px; border-bottom-left-radius:30px; border-bottom-right-radius:30px; }
 .section04-1 .point-list .box .sub-tit { color:#202020; font-size:35px; font-weight:bold; padding-bottom:14px; }
 .section04-1 .point-list .box .desc { color:#202020; font-size:20px; }
+.section04-1 .point-list .img img { width:100%; }
 
 .section05 { position:relative; }
 .section05 .inner { padding:500px 0; background:url('../../img/img_detail04.jpg') center no-repeat; background-size:cover; }
@@ -94,9 +95,9 @@
 
 
 .section10 { position:relative; background:#fff; }
-.section10 .inner { max-width:1200px; margin:0 auto; }
+.section10 .inner { max-width:1400px; padding:150px 5%; margin:0 auto; }
 
-.indi-pill-wrap { display:-webkit-flex; display:flex; flex-wrap:wrap; padding:150px 0; }
+.indi-pill-wrap { display:-webkit-flex; display:flex; flex-wrap:wrap; padding:0 0 200px; }
 .indi-pill-wrap.vita > div { background:#fcf4de; border-radius:30px; }
 .indi-pill-wrap.lutein > div { background:#ddd4d3; border-radius:30px; }
 .indi-pill-wrap.pro > div { background:#eaeff3; border-radius:30px; }
@@ -238,7 +239,7 @@
 
     .section,
     .section .inner { max-width:100%; min-width:320px; margin:0 auto; }
-    .section .tit { font-size:60px; }
+    .section .tit { font-size:60px !important; }
 
 
     .section02 .parallax { padding-top:150px; padding-bottom:0; width:100%; min-width:320px; }
@@ -250,8 +251,10 @@
 
     .section04 .inner { padding:200px 5%; }
     .section04 .txt-wrap { padding-left:5%; }
-    
     .section04 .health-list .sub-tit { font-size:30px; }
+
+
+    .section04-1 .inner { padding:0 5% 200px; }
 
 
     .section06 .inner { padding:200px 5%; }
@@ -264,14 +267,18 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .section .tit { font-size:50px; }
+    .section .tit { font-size:50px !important; }
 
 
     .section02 .parallax li { font-size:40px; display:block; }
 
+    
     .section04 .tit { padding-bottom:50px; }
     .section04 .health-list { padding-bottom:40px; }
     .section04 .health-list .sub-tit { font-size:20px; }
+
+
+    .section04-1 .tit { padding-bottom:30px; }
 
     .section08 .txt-sec.flex { flex-wrap:wrap; justify-self: end; }
     .section08 .img02 { width:100%; text-align:right; }
@@ -280,8 +287,16 @@
 }
 
 @media screen and (max-width: 991px) {
+    .section .tit { font-size:40px !important; }
+
     .section04 .inner { padding-left:0; }
     .section04 .thumb { width:50%; min-width:200px; }
+
+    
+    .section04-1 .point-list .box { padding:40px 15% 50px; }
+    .section04-1 .point-list .box .sub-tit { font-size:20px; }
+    .section04-1 .point-list .box .desc { font-size:16px; }
+    
 
     .section07 .parallax li { font-size:50px; }
 
@@ -289,6 +304,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .section02 .parallax li { font-size:30px; }
+
+    .section04-1 .point-list-wrap { flex-wrap:wrap; }
+    .section04-1 .point-list { width:100%; padding:0 5% 50px; }
+    
     
 
 }
