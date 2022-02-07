@@ -55,7 +55,9 @@
 
                 <section class="section section03">
                     <div class="img-up">
-                        <p class="img01"><img src="../img/img_detail02.jpg" alt="" class="bdrs"></p>
+                        <p class="img01"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"><img src="../img/img_detail02.jpg" alt="" class="bdrs"></p>
                         <p class="img02"
                             data-aos="fade-up"
                             data-aos-duration="1000"><img src="../img/img_detail02_02.jpg" alt="" class="bdrs"></p>
@@ -119,8 +121,7 @@
                             </div>
                             <div class="point-list"
                             data-aos="fade-up"
-                            data-aos-duration="1000"
-                            data-aos-delay="500">
+                            data-aos-duration="1000">
                                 <p class="img"><img src="../img/img_point02.jpg" alt=""></p>
                                 <div class="box">
                                     <p class="sub-tit">없으면 안될.</p>
@@ -129,8 +130,7 @@
                             </div>
                             <div class="point-list"
                             data-aos="fade-up"
-                            data-aos-duration="1000"
-                            data-aos-delay="1000">
+                            data-aos-duration="1000">
                                 <p class="img"><img src="../img/img_point03.jpg" alt=""></p>
                                 <div class="box">
                                     <p class="sub-tit">고집스러움.</p>
@@ -598,9 +598,6 @@
 
 
         var controllerText1 = new ScrollMagic.Controller({globalSceneOptions: {duration:250, offset:-150}});
-        var controllerText2 = new ScrollMagic.Controller({globalSceneOptions: {duration:200}});
-        var controllerText3 = new ScrollMagic.Controller({globalSceneOptions: {duration:150}});
-        var controllerText4 = new ScrollMagic.Controller({globalSceneOptions: {duration:200, offset:50}});
         
         // build scenes
         new ScrollMagic.Scene({triggerElement: "#sec1"})
@@ -608,31 +605,31 @@
                         .addTo(controllerText1)
         new ScrollMagic.Scene({triggerElement: "#sec2"})
                         .setClassToggle("#sec2", "active")
-                        .addTo(controllerText2)
+                        .addTo(controller)
         new ScrollMagic.Scene({triggerElement: "#sec3"})
                         .setClassToggle("#sec3", "active")
-                        .addTo(controllerText3)
+                        .addTo(controller)
         new ScrollMagic.Scene({triggerElement: "#sec4"})
                         .setClassToggle("#sec4", "active")
-                        .addTo(controllerText3)
+                        .addTo(controller)
         new ScrollMagic.Scene({triggerElement: "#sec5"})
                         .setClassToggle("#sec5", "active")
-                        .addTo(controllerText4)
+                        .addTo(controller)
 
         
 
 
 
-        var smaller = new TimelineMax().add([
-            TweenMax.to(".img-up [class*='img']", 1, { opacity:"1", y: -300, ease: Linear.easeNone })
-        ])
-        new ScrollMagic.Scene({
-            triggerElement: "#trigger1",
-            triggerHook: 0,
-            duration: '100%'
-        })
-            .setTween(smaller)
-            .addTo(controller3);
+        // var smaller = new TimelineMax().add([
+        //     TweenMax.to(".img-up [class*='img']", 1, { opacity:"1", y: -300, ease: Linear.easeNone })
+        // ])
+        // new ScrollMagic.Scene({
+        //     triggerElement: "#trigger1",
+        //     triggerHook: 0,
+        //     duration: '100%'
+        // })
+        //     .setTween(smaller)
+        //     .addTo(controller3);
 
 
 
